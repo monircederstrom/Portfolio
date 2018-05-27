@@ -1,22 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
-    <title>Monir Cederstrom</title>
-  </head>
-  <body>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Monir Cederstrom</title>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+</head>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
+  <body>
     <div class="container">
             
             <div class="row">
@@ -46,37 +49,22 @@
                         <hr>
                         <section class="portfolio">
                                 <div>
-                                        <div class="ppic">
-                                            <img src="assets/images/images.jpeg" alt="hangman" width="250" height="175">
+                                        <div class="ppic" id="hangman">
+                                            <img src="assets/images/hangman.jpg" alt="hangman" width="250" height="175">
                                             <div class="piclabel">
                                                 Hangman
                                             </div>
                                         </div>
-                                    <div class="ppic">
-                                        <img src="assets/images/bridge.jpg" alt="Bridge" width="250" height="175" >
+                                    <div class="ppic" id="sonrise">
+                                        <img src="assets/images/austin_Sunrise.jpg" alt="Bridge" width="250" height="175" >
                                         <div class="piclabel">
-                                        Bridge
+                                        Son Rise
                                         </div>
                                     </div>
-
-                                    <div class="ppic">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5bDLE_q5_2ahaqa6UwmA2-Z4bBeeo38Rtj9Eo9iHGdYvcClDRKw" ALT="Rock Paper Scissors" width="250" height="175">
+                                    <div class="ppic" id="memood">
+                                        <img src="assets/images/memood.jpeg" alt="Peacock" width="250" height="175">
                                         <div class="piclabel">
-                                        Rock Paper Scissors
-                                        </div>
-                                    </div>
-
-                                    <div class="ppic">
-                                        <img src="assets/images/hearts.jpeg" alt="Hearts" width="250" height="175">
-                                        <div class="piclabel">
-                                            Hearts
-                                        </div>
-                                    </div>
- 
-                                    <div class="ppic">
-                                        <img src="assets/images/pea.jpeg" alt="Peacock" width="250" height="175">
-                                        <div class="piclabel">
-                                        Peacock
+                                        MeMood
                                         </div>
                                     </div>
                                 </div>
@@ -107,9 +95,24 @@
                 </div>
             </div>
             <footer style="background-color:darkgray;border-top:2px solid #4ffff5;color:whitesmoke;padding-top:15px;width:100%;text-align:center;height:50px">
-                (C)Copyright 2016 Monir Cederstrom
+                (C)Copyright 2018 Monir Cederstrom
             </footer>
         </div>
-    
+    <script>
+        var hang = document.getElementById('hangman') 
+        hang.addEventListener('click', e =>
+        {
+        window.location.href = "https://monircederstrom.github.io/Hangman-Game";
+    });
+    var sonrise = document.getElementById('sonrise') 
+        sonrise.addEventListener('click', e =>
+        {
+        window.location.href = "https://tranquil-brushlands-88307.herokuapp.com/";
+    });
+    var memood = document.getElementById('memood')
+    memood.addEventListener('click', e => {
+        window.location.href = "https://monircederstrom.github.io/project-one/"
+    })
+    </script>
 </body>
 </html>
